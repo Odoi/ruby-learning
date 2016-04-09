@@ -7,100 +7,27 @@
 #
 # 問題１,n=20,m=3の時の回数？
 # 問題２,n=100,m=5の時の回数？
-#
 
-# https://github.com/Odoi/ruby-learning.git
 
-# firstcut = 1
-# secondcut = 1
+n = 100
+m = 5
 
-# n = 100
-# m = 5
-#
-# maxcut = 1
-# cuts = 0
-# parts = 1
-#
-# loop{
-#   if m < maxcut
-#     parts = parts + m
-#
-#   else parts = parts * 2
-#   end
-#
-#   cuts += 1
-#
-#   break if parts > n
-#
-#   maxcut = maxcut * 2
-# }
-#
-# puts cuts
-n = 100 m = 5
+maxcut = 1
+cuts = 0
+parts = 1
 
-maxcut = 1 cuts = 0 parts = 1
+loop{
+  if m < maxcut
+    parts = parts + m
 
-loop{ if m < maxcut parts = parts + m
+  else parts = parts * 2
+  end
 
-else parts = parts * 2 end
+  cuts += 1
 
-cuts += 1
+  break if parts > n
 
-break if parts > n
-
-maxcut = maxcut * 2 }
+  maxcut = maxcut * 2
+}
 
 puts cuts
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# print(self.to_s)
-# print(self.class.to_s)
-#
-
-# require "kconv"
-#
-# def printHello
-#   print("Hello\n")
-# end
-#
-# print(Kconv.tosjis("method\n"))
-# printHello
-# print(Kconv.tosjis("method called\n"))
-#
-#
-#
-#
-# require 'pp'
-#
-# a = 42
-# b = 30
-#
-# def gcd(a, b)
-#   return a if b == 0
-#   gcd(b, a % b)
-# end
-#
-# puts gcd(a, b)
